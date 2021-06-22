@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>Survey</title>
+    <h1 id="title">Example Survey Form</h1>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+<div>
+
+</div>
+    <p id="description">Please fill out this example survey, thank you!</p>
+    <div class="container">
+        <form id="survey-form">
+            <div class="form-group">
+                <label class="required" id="name-label">
+                    Name
+                </label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group">
+                <label class="required" id="email-label">
+                    Email
+                </label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Enter Email" required>
+             </div>  
+             <div class="form-group">
+                <label id="number-label">
+                    Age
+                </label>
+                <input type="number" class="form-control" name="age" id="number" placeholder="Age" min="5" max="100">
+            </div> 
+            <div class="form-group">
+                <label id="dropdown-label">
+                    Select an example from the dropdown
+                </label>
+                <select id="dropdown" class="form-control" name="select" required>
+                    <option disabled value="">Select an option</option>
+                    <option value="Example1">Example 1</option>
+                    <option value="Example2">Example 2</option>
+                    <option value="Example3">Example 3</option>
+                    <option value="Example4">Example 4</option>
+                </select>
+            </div> 
+            <div class="form-group"> 
+                <label id="radio-label">Select an example</label>
+                <label>
+                    <input class="input-radio" type="radio" name="radio" value="Example 1" checked>
+                    Example 1
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="radio" value="Example 2">
+                    Example 2
+                </label>
+                <label>
+                    <input class="input-radio" type="radio" name="radio" value="Example 3">
+                    Example 3
+                </label>
+            </div>
+            <div class="form-group">   
+                <label id="checkbox-label">Check any that apply</label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="exp1" value="1">
+                    Example 1
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="exp2" value="2">
+                    Example 2
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="exp3" value="3">
+                    Example 3
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="exp4" value="4">
+                    Example 4
+                </label>
+                <label>
+                    <input class="input-checkbox" type="checkbox" name="exp5" value="5">
+                    Example 5
+                </label>
+            </div>
+            <div class="form-group">
+                <label id="comment-label">Have any addtional comments or suggestions?</label>
+                <textarea class="input-textarea" name="comment" id="comment" placeholder="Enter any additonal comments here"></textarea>
+            </div>
+            <div class="form-group">
+                <input class="submit-button" type="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div> 
+</body>
+
+<footer>
+
+</footer>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+XXXXUser Story #1: I can see a title with id="title" in H1 sized text.
+
+XXXXUser Story #2: I can see a short explanation with id="description" in P sized text.
+
+XXXXUser Story #3: I can see a form with id="survey-form".
+
+XXXXUser Story #4: Inside the form element, I am required to enter my name in a field with id="name".
+
+XXXXUser Story #5: Inside the form element, I am required to enter an email in a field with id="email".
+
+User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
+
+XXXXUser Story #7: Inside the form, I can enter a number in a field with id="number".
+
+User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error.
+
+User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error.
+
+XXXXUser Story #10: For the name, email, and number input fields inside the form I can see corresponding labels that describe the purpose of each field with the following ids: id="name-label", id="email-label", and id="number-label".
+
+User Story #11: For the name, email, and number input fields, I can see placeholder text that gives me a description or instructions for each field.
+
+XXXXUser Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown".
+
+XXXXUser Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute.
+
+XXXXUser Story #14: Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
+
+XXXXUser Story #15: Inside the form element, I am presented with a textarea at the end for additional comments.
+
+XXXXUser Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. 
+-->
